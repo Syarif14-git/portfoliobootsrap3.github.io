@@ -1,0 +1,50 @@
+/* html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+} */
+body {
+  padding-top: 50px;
+}
+nav.navbar ul li a {
+  margin: 0;
+  /* font-weight: bold;
+  color: red; */
+}
+.jumbotron img {
+  width: 200px;
+  border: 2px solid black;
+}
+section {
+  min-height: 300px;
+}
+section.portfolio {
+  background-color: #eee;
+}
+hr {
+  border: 2px solid darkgray;
+  width: 250px;
+}
+.row .col-sm-3 a img {
+  width: 100%;
+  margin: 0;
+}
+footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  background-color: rgb(48, 47, 47);
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  color: #eee;
+  font-size: 0.9em;
+}
+footer .row:nth-child(1) i {
+  color: skyblue;
+}
+footer a {
+  color: white;
+}

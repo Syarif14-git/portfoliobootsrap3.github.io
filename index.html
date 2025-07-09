@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>portfolio bootstrap 3</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#home">syarif</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+            <li><a href="#contact" class="page-scroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+      <img src="img/syarif2.jpg" alt="" class="img-circle" />
+      <h1>Syarif Apriludi</h1>
+      <p>Programmer | student</p>
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center bg-dark">
+            <h2>About</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, animi. Consectetur enim vel quisquam eligendi quod ab nobis optio recusandae doloribus consequuntur. Illum quibusdam ut fuga non vitae tempore eos!</p>
+          </div>
+          <div class="col-sm-5">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aperiam harum, inventore velit laboriosam accusamus maxime voluptas repudiandae non ullam adipisci, placeat, voluptatem aut. Non delectus sapiente ab ipsum
+              voluptatum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir about -->
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>portfolio</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="#" class="thumbnail">
+              <img src="img/belajar5.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="thumbnail">
+              <img src="img/smartlock.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="thumbnail">
+              <img src="img/smartlock.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="thumbnail">
+              <img src="img/smartlock.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir portfolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>contact</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <form action="">
+              <div class="form-group">
+                <label for="nama">nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="masukan nama" />
+              </div>
+              <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" id="email" class="form-control" placeholder="masukan email" />
+              </div>
+              <div class="form-group">
+                <label for="telp">telepon</label>
+                <input type="tel" id="telp" class="form-control" placeholder="masukan no telepon" />
+              </div>
+              <div class="form-group">
+                <select name="" id="" class="form-control">
+                  <option value="">---pilih kategori---</option>
+                  <option value="">programming</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pesan">pesan</label>
+                <textarea name="" id="pesan" rows="10" placeholder="kirim pesan" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn-primary">kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>&copy copyright 2024 | built by. <i class="glyphicon glyphicon-hand-right"></i> <a href="syarifapriludi@gmail.com">@syarifapriludi</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i> follow to tiktok</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
