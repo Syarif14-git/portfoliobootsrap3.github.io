@@ -17,28 +17,89 @@ div.jumbotron {
   background-image: url(../img/bg4.jpg);
   background-position: center 50px;
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   background-attachment: fixed;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .jumbotron img {
-  width: 200px;
+  width: 300px;
   border: 2px solid rgba(255, 255, 255, 0.753);
+  box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.301);
+  z-index: 1;
 }
+
+.jumbotron h1,
+.jumbotron p {
+  opacity: 1;
+  transition: 1s;
+}
+
+.jumbotron h1.hilang,
+.jumbotron p.hilang {
+  opacity: 0;
+  transform: scale(0);
+}
+
 section {
-  min-height: 300px;
+  min-height: 500px;
 }
+
+section.about {
+  overflow: hidden;
+}
+
+.about .paragraf {
+  transition: 1s;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.about .paragraf:nth-child(1) {
+  transform: translateX(-100px);
+}
+
+.about .paragraf:nth-child(2) {
+  transform: translateX(100px);
+}
+
+.about .paragraf.pas {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 section.portfolio {
   background-color: #eee;
+  overflow: hidden;
 }
+
+.portfolio .thumbnail {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.portfolio .thumbnail.muncul {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 hr {
   border: 2px solid darkgray;
   width: 250px;
 }
+
 .row .col-sm-3 a img {
   width: 100%;
   margin: 0;
 }
+
 footer {
   /* position: absolute; */
   /* bottom: 0; */

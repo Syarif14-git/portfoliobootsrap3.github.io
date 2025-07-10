@@ -25,6 +25,7 @@ $(".page-scroll").on("click", function (e) {
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop();
 
+  // buat efek di jumbotron
   $(".jumbotron img").css({
     transform: "translate(0px, " + wScroll / 4 + "%)",
   });
@@ -34,5 +35,28 @@ $(window).scroll(function () {
   $(".jumbotron p").css({
     transform: "translate(0px, " + wScroll / 1.2 + "%)",
   });
-  // console.log(wScroll);
+
+  if (wScroll >= 250) {
+    $(".jumbotron h1").addClass("hilang");
+    $(".jumbotron p").addClass("hilang");
+  } else {
+    $(".jumbotron h1").removeClass("hilang");
+    $(".jumbotron p").removeClass("hilang");
+  }
+
+  console.log(wScroll);
+
+  // buat efek paragraf di about
+  if (wScroll >= 250 && wScroll <= 700) {
+    $(".about .paragraf").addClass("pas");
+  } else {
+    $(".about .paragraf").removeClass("pas");
+  }
+
+  // buat efek portfolio
+  if (wScroll >= 600 && wScroll <= 1200) {
+    $(".portfolio .thumbnail").addClass("muncul");
+  } else {
+    $(".portfolio .thumbnail").removeClass("muncul");
+  }
 });
