@@ -24,19 +24,23 @@ $(".page-scroll").on("click", function (e) {
 // untuk menyimpan parallax
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop();
+  let jot = $(".jumbotron").offset().top;
+  let aot = $(".about").offset().top;
+  let pot = $(".portfolio").offset().top;
+  let cot = $(".contact").offset().top;
 
   // buat efek di jumbotron
   $(".jumbotron img").css({
     transform: "translate(0px, " + wScroll / 4 + "%)",
   });
   $(".jumbotron h1").css({
-    transform: "translate(0px, " + wScroll / 2 + "%)",
+    transform: "translate(0px, " + wScroll / 3.5 + "%)",
   });
   $(".jumbotron p").css({
-    transform: "translate(0px, " + wScroll / 1.2 + "%)",
+    transform: "translate(0px, " + wScroll / 3 + "%)",
   });
 
-  if (wScroll >= 250) {
+  if (wScroll >= jot) {
     $(".jumbotron h1").addClass("hilang");
     $(".jumbotron p").addClass("hilang");
   } else {
@@ -44,19 +48,35 @@ $(window).scroll(function () {
     $(".jumbotron p").removeClass("hilang");
   }
 
-  console.log(wScroll);
+  // console.log(wScroll);
 
   // buat efek paragraf di about
-  if (wScroll >= 250 && wScroll <= 700) {
+  if (wScroll >= aot - 200 && wScroll <= pot - 250) {
     $(".about .paragraf").addClass("pas");
   } else {
     $(".about .paragraf").removeClass("pas");
   }
 
   // buat efek portfolio
-  if (wScroll >= 600 && wScroll <= 1200) {
-    $(".portfolio .thumbnail").addClass("muncul");
+  if (wScroll >= pot - 200 && wScroll <= cot - 200) {
+    $(".portfolio .thumbnail").each(function (i) {
+      setTimeout(function () {
+        $(".portfolio .thumbnail").eq(i).addClass("muncul");
+      }, 300 * (i + 2));
+    });
   } else {
     $(".portfolio .thumbnail").removeClass("muncul");
   }
+
+  // buat efek contact
+  if (wScroll >= cot - 200) {
+    $(".contact .container").addClass("CMuncul");
+  } else {
+    $(".contact .container").removeClass("CMuncul");
+  }
+});
+
+// contact
+$(".c").on("click", function () {
+  $(".contact .container").addClass("CMuncul");
 });

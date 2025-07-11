@@ -22,6 +22,7 @@ div.jumbotron {
   background-attachment: fixed;
   overflow: hidden;
   height: 100vh;
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,6 +91,18 @@ section.portfolio {
 .portfolio .thumbnail.muncul {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.contact .container {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.contact .container.CMuncul {
+  height: 70rem;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 hr {
